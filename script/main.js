@@ -14,6 +14,7 @@ $( document ).ready(function() {
 
 function onBtnPertifyClick(){
   var sInput = $('#textAreaInpScript').val();
+  sInput = _removeLineBreaks(sInput);
   var sSqlPrep = _extractPrepQueryFromInput(sInput);
   var aColPorperties = _extractArrayOfDataFromInput(sInput);
   
@@ -44,4 +45,7 @@ function _prepareQuery(sQueryPrep,aQueryArgs){
    return final_query;
 }
 
+function _removeLineBreaks(sInput){
+  return sInput.replace(/(\r\n|\n|\r)/gm,"");
+}
 })(window);
