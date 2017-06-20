@@ -7,8 +7,8 @@
 
 $( document ).ready(function() {
     console.log( "ready!" );
+    $('#btn_pertify_copy').click(onBtnPertifyClick);
     $('#btn_pertify').click(onBtnPertifyClick);
-    
     var clipboard = new Clipboard('.btn');
 });
 

@@ -284,3 +284,11 @@ code {
         font-size: 22px;
     }
 }
+
+.main_section{
+  padding: 15px 10px;
+}
+
+.btn_bar{
+   padding: 10px 0px;
+}
