@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SQLPrepareStatementPertify</title>
+  <title>SQL Prepared Statement Beautify</title>
   <link rel="stylesheet" href="styles/primer.css">
   <link rel="stylesheet" href="styles/styles.css">
   
@@ -12,19 +12,27 @@
 
 <body>
   <header class="header gradient text-center">
-  <h1 id="title_hd" class="title">SQL Prepared Statement Pertify</h1>
+  <h1 id="title_hd" class="title">SQL Prepared Statement Beautify</h1>
   
-  <h2 class="subtitle">Copy your prepare statement,pertify and run.Its Easy</h2>
+  <h2 class="subtitle">Copy your sql prepared statement,beautify and copy.Its Easy</h2>
   </header>
   
+  <div id ="main" class="main_section">
+
   <div id="IpScript">
     <textarea id="textAreaInpScript" placeholder="Enter your script here!"></textarea>
+  </div>
     
-    <button id="btn_pertify" class="btn" data-clipboard-action="copy" data-clipboard-target="#textAreaOupScript">Pertify&Copy</button>
+  <div class="btn_bar">
+     <button id="btn_pertify_copy" class="btn" data-clipboard-action="copy" data-clipboard-target="#textAreaOupScript">Beautify&Copy</button>
+     <button id="btn_pertify" class="btn">Beautify</button>
+     <button id="btn_copy" class="btn" data-clipboard-action="copy" data-clipboard-target="#textAreaOupScript">Copy</button>
   </div>
   
   <div>
      <textarea id="textAreaOupScript" placeholder="Output!"></textarea>
+  </div>
+  
   </div>
 </body>
 </html>
